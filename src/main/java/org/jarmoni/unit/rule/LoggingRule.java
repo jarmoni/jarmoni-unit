@@ -21,7 +21,7 @@ public class LoggingRule extends TestWatcher {
 
 	@Override
 	protected void failed(final Throwable e, final Description description) {
-		logger.info("*** Failed={}#{}", description.getClassName(), description.getMethodName());
+		logger.info("*** Failed={}#{}", description.getClassName(), description.getMethodName(), e);
 	}
 
 }
